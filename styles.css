@@ -50,6 +50,11 @@ nav li a {
     color: white;
 
 }
+#menu-bar{
+    font-size: 2rem;
+    color: white;
+    display: none;
+}
 
 /* Header Related Style */
 .header {
@@ -84,10 +89,23 @@ nav li a {
 
 .banner-seal {
     position: absolute;
-    left: 140px;
+    left: 120px;
     bottom: 70px;
+    animation: bounce 5s infinite;
 
 }
+
+/* bounce animation */
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(-10%);
+      animation-timing-function: cubic-bezier(0.8, 0, 2, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 2,1);
+    }
+  }
 
 .banner-text {
     position: absolute;
@@ -175,6 +193,12 @@ nav li a {
     background-color: #f0f2f8;
     text-align: center;
 }
+.card:hover{
+    transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(0.2, 0, 0.4, 1);
+    transition-duration: 500ms;
+   	transform: translateY(0.25rem);
+}
 
 .features-card-description {
     margin: 20px 0;
@@ -239,13 +263,14 @@ nav li a {
     font-size: 3.6rem;
     color: #15161d;
     bottom: -180px;
-    right: 350px;
+    right: 320px;
 }
 
 .demo-section-heading .demo-img1 {
     position: absolute;
     left: 250px;
-    bottom: -100px;
+    bottom: -110px;
+    animation: bounce 5s infinite;
 }
 
 .demo-section-heading .demo-img2 {
@@ -267,9 +292,14 @@ nav li a {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 10px 20px #888888;
-
-
 }
+.demo-card:hover{
+    transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(0.2, 0, 0.4, 1);
+    transition-duration: 500ms;
+   	transform: translateY(0.25rem);
+}
+
 
 .demo-card img {
     width: 100%;
@@ -571,6 +601,7 @@ nav li a {
     position: absolute;
     top: -50px;
     right: 30px;
+    animation: bounce 2s infinite;
 }
 
 .template-heading-title .img2 {
@@ -615,8 +646,19 @@ nav li a {
     position: absolute;
     right: 90px;
     top: 100px;
+    animation: spin 6s linear infinite;
 
 }
+
+/* Spin Animation */
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 .power-feature-title-container .power-section-seal2 {
     position: absolute;
@@ -644,6 +686,14 @@ nav li a {
     border-radius:10px;
     padding:10px;
 }
+
+.card-body:hover{
+    transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(0.2, 0, 0.4, 1);
+    transition-duration: 500ms;
+   	transform: translateY(0.25rem);
+}
+
 .card-body img{
     width: 100%;
 }
@@ -792,4 +842,52 @@ footer{
 }
 .footer-logo{
     margin-top: 50px;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+     display: flex;
+        /* justify-content:space-around; */
+        align-items: center;
+        padding-top: 30px;
+    }
+    nav ul {
+   display: flex;
+   flex-direction:column;
+        position: absolute;
+        top:100px;
+        left: 10px;
+        background-color: #7a7a83;
+        padding: 10px 10px;
+        border-radius: 8px;
+        gap: 10px;
+        text-align: center;
+    }
+    .nav-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+    #menu-bar{
+        display: inline;
+        color: #fcfcfd;
+        font-size: 20px;
+    }
+    .btn-primary{
+        font-size: 12px;
+    }
+    .banner-bg{
+        font-size: 8rem;
+    }
+    .banner-title{
+        display: none;
+    }
+    .banner-description{
+        display: none;
+    }
+    .banner-seal{
+        display: none;
+    }
 }

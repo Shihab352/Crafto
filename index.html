@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crafto</title>
+    <link rel="shortcut icon" href="/image/apple-touch-icon-57x57.webp" type="image/x-icon">
+    <title>Crafto - The Multipurpose HTML5 Template</title>
     <!-- Font From Google -->
 
     <!-- Jakarta -->
@@ -25,8 +26,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-        <!-- font awesom icon -->
-        <script src="https://kit.fontawesome.com/e0b8066182.js" crossorigin="anonymous"></script>
+    <!-- font awesom icon -->
+    <script src="https://kit.fontawesome.com/e0b8066182.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -39,7 +40,8 @@
                 <img class="nav-title" src="/image/logo-white.webp" alt="">
             </div>
             <div>
-                <ul>
+                <ul id="menuList">
+
                     <li><a href="">Pre-Built Sites (52+)</a></li>
                     <li><a href="">Pages</a></li>
                     <li><a href="">Portfolio</a></li>
@@ -50,8 +52,9 @@
                     <li><a href="">Help</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="nav-btn">
                 <button class="btn-primary">Purchase Crafto <i class="fa-solid fa-cart-shopping"></i></button>
+                <i onclick="toggleMenu()" id="menu-bar" class="fa-solid fa-bars"></i>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -65,14 +68,15 @@
                 </div>
             </div>
             <div>
-                <img class="banner-seal" src="/image/crafto-landing-page-hero-section-seal.webp" alt="">
+                <img class="banner-seal bounce" src="/image/crafto-landing-page-hero-section-seal.webp" alt="">
             </div>
             <div class="banner-text">
                 <div>
                     <h1 class="banner-title golos-regular">Powering your business with <br>ready-made templates.</h1>
                     <p class="banner-description golos-regular">You can create your website in minutes with the help of
                         <br>
-                        countless amazing powerful features of Crafto.</p>
+                        countless amazing powerful features of Crafto.
+                    </p>
                 </div>
                 <div class="banner-btn ">
                     <button class="btn1 btn-primary">Explore Crafto <i class="fa-solid fa-circle-play"></i></button>
@@ -345,513 +349,548 @@
                 </div>
                 <div class="premium-section-footer-title">
                     <h4>LOADED WITH ALL THE EXCLUSIVE FEATURES YOU DEMAND <i class="fa-solid fa-arrow-right"></i></h4>
-                   
-                   
-                    
+
+
+
                 </div>
 
             </div>
         </section>
 
         <!-- Sticky Box Section -->
-         <section class="Sticky-box-section">
-<div>
-    <!-- Sticky Box 1 -->
-    <div class="sticky-box">
-        <div class="sticky-image">
-            <img src="/image/crafto-landing-page-portfolio.jpg" alt="">
-        </div>
-        <div class="sticky-box-content">
-            <button class="btn-showcase">SHOWCASE YOUR WORK</button>
-            <h1>The fantastic portfolio.</h1>
-            <p><b style="color: black;">Highly customizable</b> unique portfolio types and options that lead to fantastic portfolios with unlimited styles to showcase your work.</p>
-            <div class="sticky-box-feature">
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>25+ Unique portfolio styles</p>
-                </div>
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>Adjustable column</p>
-                </div>
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>Attractive hover styles</p>
-                </div>
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>06+ Advanced single project</p>
-                </div>
-            </div>
+        <section class="Sticky-box-section">
             <div>
-                <button class="btn-portfolio">Create Your portfolio</button>
-            </div>
-        </div>
-
-    </div>
-    <!-- Sticky Box 2 -->
-    <div class="sticky-box2">
-        <div class="sticky-box-content2">
-            <button class="btn-showcase">Blogging experience</button>
-            <h1>The ultimate for bloggers.</h1>
-            <p><b style="color: black;">Present your content in a unique way. </b> Design your own single post template from scratch, piece by piece.</p>
-            <div class="sticky-box-feature">
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>25+ Unique portfolio styles</p>
-                </div>
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>Adjustable column</p>
-                </div>
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>Attractive hover styles</p>
-                </div>
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>06+ Advanced single project</p>
-                </div>
-            </div>
-            <div>
-                <button class="btn-portfolio">Power your words <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-        </div>
-        <div class="sticky-image">
-            <img src="/image/crafto-landing-page-blog.jpg" alt="">
-        </div>
-       
-
-    </div>
-    <!-- Sticky Box 3 -->
-    <div class="sticky-box">
-        <div class="sticky-image">
-            <img src="/image/crafto-landing-page-ecommerce.jpg" alt="">
-        </div>
-        <div class="sticky-box-content">
-            <button class="btn-showcase">Skyrocket your sales</button>
-            <h1>Empower your online sales.</h1>
-            <p><b style="color: black;">Showcase your products online and skyrocket sales</b> with Crafto. Start your eCommerce journey with cutting-edge modern designs..</p>
-            <div class="sticky-box-feature">
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>25+ Unique portfolio styles</p>
-                </div>
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>Adjustable column</p>
-                </div>
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>Attractive hover styles</p>
-                </div>
-                <div class="sticky-feature">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>06+ Advanced single project</p>
-                </div>
-            </div>
-            <div>
-                <button class="btn-portfolio">Build your online store</button>
-            </div>
-        </div>
-
-    </div>
-</div>
-         </section>
-
-         <!-- Perfect template section -->
-          <section class="perfect-template-section">
-<div class="template-section-heading ">
-<div class="template-heading-title">
-    <img class="img1" src="/image/crafto-landing-page-img-05.webp" alt="">
-    <h1>1450+</h1>
-    <img class="img2" src="/image/crafto-landing-page-img-06.webp" alt="">
-</div>
-<div class="template-heading-description">
-    <button class="btn-showcase">ULTIMATE SECTIONS COLLECTION</button>
-    <h1>Perfect template for your website.</h1>
-    <p>A unique collection of over <b style="color: black;">1450+ pre-made section</b> that make building a beautiful site easy. Crafto elements brings the latest web trends to your fingertips</p>
-</div>
-</div>
-
-<marquee behavior="" direction=""  >
-<img src="/image/MArquee/crafto-landing-page-templates-slider-01.jpg" alt="">
-<img src="/image/MArquee/crafto-landing-page-templates-slider-02.jpg" alt="">
-<img src="/image/MArquee/crafto-landing-page-templates-slider-03.jpg" alt="">
-<img src="/image/MArquee/crafto-landing-page-templates-slider-05.jpg" alt="">
-<img src="/image/MArquee/crafto-landing-page-templates-slider-06.jpg" alt="">
-<img src="/image/MArquee/crafto-landing-page-templates-slider-07.jpg" alt="">
-<img src="/image/MArquee/crafto-landing-page-templates-slider-08.jpg" alt="">
-<img src="/image/MArquee/crafto-landing-page-templates-slider-09.jpg" alt="">
-<img src="/image/MArquee/crafto-landing-page-templates-slider-04.jpg" alt="">
-<img src="/image/MArquee/crafto-landing-page-templates-slider-10.jpg" alt="">
-
-</marquee>
-<div class="template-section-footer">
-    <img src="/image/crafto-landing-page-img-10.webp" alt="">
-</div>
-          </section>
-
-          <!-- Power feature section -->
-           <section class="power-fetaure-section ">
-<div class="power-feature-title-container">
-    <div>
-        <img class="power-section-seal1" src="/image/MArquee/crafto-landing-page-themezaa-seal-01.webp" alt="">
-        <img class="power-section-seal2" src="/image/MArquee/crafto-landing-page-themezaa-seal-02.webp" alt="">
-    </div>
-    <div class="power-feature-title">
-        <h1>Power</h1>
-        <h2>Limitless features and <br>
-         endless possibilities</h2>
-    </div>
-</div>
-
-<div class="power-feature-card-container container ">
-    <!-- Card 1 -->
-<div class="card-body">
-    <div>
-        <img src="/image/MArquee/crafto-landing-page-sass-css-with-superpowers.jpg" alt="">
-    </div>
-    <div class="card-description">
-<h4>Sass - CSS with superpowers</h4>
-<p>Handle CSS with Sass. The most stable and powerful professional grade CSS extension language.</p>
-    </div>
-</div>
-    <!-- Card 2 -->
-<div class="card-body">
-    <div>
-        <img src="/image/MArquee/crafto-landing-page-perfect-pre-built-inner-pages.jpg" alt="">
-    </div>
-    <div class="card-description">
-<h4>Perfect pre-built inner pages</h4>
-<p>325+ premium in-built inner pages. Create your website in minutes by using readymade inner pages.</p>
-    </div>
-</div>
-    <!-- Card 3 -->
-<div class="card-body">
-    <div>
-        <img src="/image/MArquee/crafto-landing-page-unique-animations.jpg" alt="">
-    </div>
-    <div class="card-description">
-<h4>Unique animations</h4>
-<p>Stand out from the crowd with impressive effects and animations that leave a mark on your visitors.</p>
-    </div>
-</div>
-    <!-- Card 4 -->
-<div class="card-body">
-    <div>
-        <img src="/image/MArquee/crafto-landing-page-powerful-marketing-popup.jpg" alt="">
-    </div>
-    <div class="card-description">
-<h4>Powerful marketing popup</h4>
-<p>Launch the journey to convert your website visitors into enthusiastic subscribers and valued customers.</p>
-    </div>
-</div>
-    <!-- Card 5 -->
-<div class="card-body">
-    <div>
-        <img src="/image/MArquee/crafto-landing-page-beautiful-text-animations.jpg" alt="">
-    </div>
-    <div class="card-description">
-<h4>Beautiful text animations</h4>
-<p>Discover impressive handpicked text animations that exemplify the artistic expression of a website.</p>
-    </div>
-</div>
-    <!-- Card 6 -->
-<div class="card-body">
-    <div>
-        <img src="/image/MArquee/crafto-landing-page-unique-header-and-mega-menucrafto-landing-page-unique-header-and-mega-menu.jpg" alt="">
-    </div>
-    <div class="card-description">
-<h4>Unique header and mega menu</h4>
-<p>Add a touch of uniqueness and style to your webiste with our exclusive header and mega menu designs.</p>
-    </div>
-</div>
-    <!-- Card 7 -->
-<div class="card-body">
-    <div>
-        <img src="/image/MArquee/crafto-landing-page-fully-responsive-layouts.jpg" alt="">
-    </div>
-    <div class="card-description">
-<h4>Fully responsive layouts</h4>
-<p>Responsive with a sharp and pixel perfect design that makes it look perfect in every device.</p>
-    </div>
-</div>
-    <!-- Card 8 -->
-<div class="card-body">
-    <div>
-        <img src="/image/MArquee/crafto-landing-page-animated-particles.jpg" alt="">
-    </div>
-    <div class="card-description">
-<h4>Animated particles</h4>
-<p>Level up your designs with stunning lightweight particle animations that enhance your pages.</p>
-    </div>
-</div>
-    <!-- Card 9 -->
-<div class="card-body">
-    <div>
-        <img src="/image/MArquee/crafto-landing-page-outstanding-performance.jpg" alt="">
-    </div>
-    <div class="card-description">
-<h4>Outstanding performance</h4>
-<p>Lightning site speed is our motto. Crafto is built for fast and efficient website delivery to your visitors.</p>
-    </div>
-</div>
-   
-    
-</div>
-
-<div class="power-section-footer">
-    <div>
-        <button>POWER</button>
-    </div>
-    <div class="power-section-footer-title">
-        <h4>Fresh and improved features, elevated power <i class="fa-solid fa-arrow-right"></i></h4>
-       
-       
-        
-    </div>
-
-</div>
-           </section>
-
-           <!-- Premium-elements section -->
-            <section class="premium-elements-section">
-                <div class="template-section-heading ">
-                    <div class="template-heading-title">
-                        <img class="img10" src="/image/crafto-landing-page-img-07.webp" alt="">
-                        <h1>300+</h1>
-                        <img class="img2" src="/image/crafto-landing-page-img-08.webp" alt="">
+                <!-- Sticky Box 1 -->
+                <div class="sticky-box">
+                    <div class="sticky-image">
+                        <img src="/image/crafto-landing-page-portfolio.jpg" alt="">
                     </div>
-                    <div class="template-heading-description">
-                       
-                        <h1>Premium elements.</h1>
-                        <p><b style="color: black;">New and improved elements, elevated power.</b> <br>
-                            Crafto's extensive element library empowers you to design websites without the necessity of deep coding skills.</p>
-                    </div>
-                    </div>
-                   
-                    <marquee class="marquee-right" behavior="" direction="">
-                      <div class="marquee-elements">
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-computer-mouse"></i>Button</button>
+                    <div class="sticky-box-content">
+                        <button class="btn-showcase">SHOWCASE YOUR WORK</button>
+                        <h1>The fantastic portfolio.</h1>
+                        <p><b style="color: black;">Highly customizable</b> unique portfolio types and options that lead
+                            to fantastic portfolios with unlimited styles to showcase your work.</p>
+                        <div class="sticky-box-feature">
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>25+ Unique portfolio styles</p>
+                            </div>
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>Adjustable column</p>
+                            </div>
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>Attractive hover styles</p>
+                            </div>
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>06+ Advanced single project</p>
+                            </div>
                         </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-icons"></i>Social Icon</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-list"></i>Lists</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-bars-progress"></i>Progress bar</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-light fa-bars"></i>Highlights</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-people-group"></i>Teams</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-user"></i>Clients</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-arrow-right"></i>Calls to action</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-regular fa-image"></i>Image Gallery</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-location-dot"></i>Google map</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-regular fa-bell"></i>Subscription</button>
-                        </div>
-                      </div>
-                    </marquee>
-                    <marquee class="marquee-right" behavior="" direction="right">
-                      <div class="marquee-elements">
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-computer-mouse"></i>Button</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-icons"></i>Social Icon</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-list"></i>Lists</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-bars-progress"></i>Progress bar</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-light fa-bars"></i>Highlights</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-people-group"></i>Teams</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-user"></i>Clients</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-arrow-right"></i>Calls to action</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-regular fa-image"></i>Image Gallery</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-location-dot"></i>Google map</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-regular fa-bell"></i>Subscription</button>
-                        </div>
-                      </div>
-                    </marquee>
-                    <marquee class="marquee-right" behavior="" direction="">
-                      <div class="marquee-elements">
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-computer-mouse"></i>Button</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-icons"></i>Social Icon</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-list"></i>Lists</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-bars-progress"></i>Progress bar</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-light fa-bars"></i>Highlights</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-people-group"></i>Teams</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-user"></i>Clients</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-arrow-right"></i>Calls to action</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-regular fa-image"></i>Image Gallery</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-solid fa-location-dot"></i>Google map</button>
-                        </div>
-                        <div class="elements-card">
-                            <button><i class="fa-regular fa-bell"></i>Subscription</button>
-                        </div>
-                      </div>
-                    </marquee>
-            </section>
-
-            <!-- Specialized features section -->
-
-            <section>
-                <div class="sticky-box2">
-                    <div class="sticky-box-content20">
-                        <button class="btn-showcase">Specialized Features</button>
-                        <h1>Differentiate your website with good visual effects and animations that impress visitors.</h1>
-                        <p><b style="color: black;">Incorporating animations is a highly effective technique for enhancing visitors engagement for your website.</b></p>
                         <div>
-                            <button class="btn-portfolio">Standout effortlessly</button>
+                            <button class="btn-portfolio">Create Your portfolio</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Sticky Box 2 -->
+                <div class="sticky-box2">
+                    <div class="sticky-box-content2">
+                        <button class="btn-showcase">Blogging experience</button>
+                        <h1>The ultimate for bloggers.</h1>
+                        <p><b style="color: black;">Present your content in a unique way. </b> Design your own single
+                            post template from scratch, piece by piece.</p>
+                        <div class="sticky-box-feature">
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>25+ Unique portfolio styles</p>
+                            </div>
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>Adjustable column</p>
+                            </div>
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>Attractive hover styles</p>
+                            </div>
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>06+ Advanced single project</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn-portfolio">Power your words <i
+                                    class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                     <div class="sticky-image">
-                        <img src="/image/crafto-landing-page-specialized-features.webp" alt="">
+                        <img src="/image/crafto-landing-page-blog.jpg" alt="">
                     </div>
-                   
-            
-                </div>
-            </section>
 
-            <!-- Customer Review section -->
-             <section class="Customer-review-section">
-                <div class="customer-review-heading">
-                    <button class="btn-showcase">Trusted and experienced power elite author</button>
-                    <h1>51,500+ Trusted customers</h1>
+
+                </div>
+                <!-- Sticky Box 3 -->
+                <div class="sticky-box">
+                    <div class="sticky-image">
+                        <img src="/image/crafto-landing-page-ecommerce.jpg" alt="">
+                    </div>
+                    <div class="sticky-box-content">
+                        <button class="btn-showcase">Skyrocket your sales</button>
+                        <h1>Empower your online sales.</h1>
+                        <p><b style="color: black;">Showcase your products online and skyrocket sales</b> with Crafto.
+                            Start your eCommerce journey with cutting-edge modern designs..</p>
+                        <div class="sticky-box-feature">
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>25+ Unique portfolio styles</p>
+                            </div>
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>Adjustable column</p>
+                            </div>
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>Attractive hover styles</p>
+                            </div>
+                            <div class="sticky-feature">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>06+ Advanced single project</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn-portfolio">Build your online store</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Perfect template section -->
+        <section class="perfect-template-section">
+            <div class="template-section-heading ">
+                <div class="template-heading-title">
+                    <img class="img1" src="/image/crafto-landing-page-img-05.webp" alt="">
+                    <h1>1450+</h1>
+                    <img class="img2" src="/image/crafto-landing-page-img-06.webp" alt="">
+                </div>
+                <div class="template-heading-description">
+                    <button class="btn-showcase">ULTIMATE SECTIONS COLLECTION</button>
+                    <h1>Perfect template for your website.</h1>
+                    <p>A unique collection of over <b style="color: black;">1450+ pre-made section</b> that make
+                        building a beautiful site easy. Crafto elements brings the latest web trends to your fingertips
+                    </p>
+                </div>
+            </div>
+
+            <marquee behavior="" direction="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-01.jpg" alt="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-02.jpg" alt="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-03.jpg" alt="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-05.jpg" alt="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-06.jpg" alt="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-07.jpg" alt="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-08.jpg" alt="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-09.jpg" alt="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-04.jpg" alt="">
+                <img src="/image/MArquee/crafto-landing-page-templates-slider-10.jpg" alt="">
+
+            </marquee>
+            <div class="template-section-footer">
+                <img src="/image/crafto-landing-page-img-10.webp" alt="">
+            </div>
+        </section>
+
+        <!-- Power feature section -->
+        <section class="power-fetaure-section ">
+            <div class="power-feature-title-container">
+                <div>
+                    <img class="power-section-seal1" src="/image/MArquee/crafto-landing-page-themezaa-seal-01.webp"
+                        alt="">
+                    <img class="power-section-seal2" src="/image/MArquee/crafto-landing-page-themezaa-seal-02.webp"
+                        alt="">
+                </div>
+                <div class="power-feature-title">
+                    <h1>Power</h1>
+                    <h2>Limitless features and <br>
+                        endless possibilities</h2>
+                </div>
+            </div>
+
+            <div class="power-feature-card-container container ">
+                <!-- Card 1 -->
+                <div class="card-body">
+                    <div>
+                        <img src="/image/MArquee/crafto-landing-page-sass-css-with-superpowers.jpg" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h4>Sass - CSS with superpowers</h4>
+                        <p>Handle CSS with Sass. The most stable and powerful professional grade CSS extension language.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card-body">
+                    <div>
+                        <img src="/image/MArquee/crafto-landing-page-perfect-pre-built-inner-pages.jpg" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h4>Perfect pre-built inner pages</h4>
+                        <p>325+ premium in-built inner pages. Create your website in minutes by using readymade inner
+                            pages.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card-body">
+                    <div>
+                        <img src="/image/MArquee/crafto-landing-page-unique-animations.jpg" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h4>Unique animations</h4>
+                        <p>Stand out from the crowd with impressive effects and animations that leave a mark on your
+                            visitors.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card-body">
+                    <div>
+                        <img src="/image/MArquee/crafto-landing-page-powerful-marketing-popup.jpg" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h4>Powerful marketing popup</h4>
+                        <p>Launch the journey to convert your website visitors into enthusiastic subscribers and valued
+                            customers.</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card-body">
+                    <div>
+                        <img src="/image/MArquee/crafto-landing-page-beautiful-text-animations.jpg" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h4>Beautiful text animations</h4>
+                        <p>Discover impressive handpicked text animations that exemplify the artistic expression of a
+                            website.</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card-body">
+                    <div>
+                        <img src="/image/MArquee/crafto-landing-page-unique-header-and-mega-menucrafto-landing-page-unique-header-and-mega-menu.jpg"
+                            alt="">
+                    </div>
+                    <div class="card-description">
+                        <h4>Unique header and mega menu</h4>
+                        <p>Add a touch of uniqueness and style to your webiste with our exclusive header and mega menu
+                            designs.</p>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="card-body">
+                    <div>
+                        <img src="/image/MArquee/crafto-landing-page-fully-responsive-layouts.jpg" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h4>Fully responsive layouts</h4>
+                        <p>Responsive with a sharp and pixel perfect design that makes it look perfect in every device.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="card-body">
+                    <div>
+                        <img src="/image/MArquee/crafto-landing-page-animated-particles.jpg" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h4>Animated particles</h4>
+                        <p>Level up your designs with stunning lightweight particle animations that enhance your pages.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="card-body">
+                    <div>
+                        <img src="/image/MArquee/crafto-landing-page-outstanding-performance.jpg" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h4>Outstanding performance</h4>
+                        <p>Lightning site speed is our motto. Crafto is built for fast and efficient website delivery to
+                            your visitors.</p>
+                    </div>
                 </div>
 
-                <div class="features-card-container container">
-<div class="review-card">
-    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple themes through themeforest</b> and by far, the support that I received from the themezaa team has been the best I have ever gotten.</p>
-    <h4>Dcappe</h4>
-    <div class="review-star">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-</div>
-<div class="review-card">
-    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple themes through themeforest</b>  and by far, the support that I received from the themezaa team has been the best I have ever gotten.</p>
-    <h4>Dcappe</h4>
-    <div class="review-star">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-</div>
-<div class="review-card">
-    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple themes through themeforest</b>  and by far, the support that I received from the themezaa team has been the best I have ever gotten.</p>
-    <h4>Dcappe</h4>
-    <div class="review-star">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-</div>
-<div class="review-card">
-    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple themes through themeforest</b>  and by far, the support that I received from the themezaa team has been the best I have ever gotten.</p>
-    <h4>Dcappe</h4>
-    <div class="review-star">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-</div>
-<div class="review-card">
-    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple themes through themeforest</b>  and by far, the support that I received from the themezaa team has been the best I have ever gotten.</p>
-    <h4>Dcappe</h4>
-    <div class="review-star">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-</div>
-<div class="review-card">
-    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple themes through themeforest</b>  and by far, the support that I received from the themezaa team has been the best I have ever gotten.</p>
-    <h4>Dcappe</h4>
-    <div class="review-star">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-</div>
+
+            </div>
+
+            <div class="power-section-footer">
+                <div>
+                    <button>POWER</button>
                 </div>
-                <div class="review-footer-btn">
-                    <button class=" "><i class="fa-solid fa-arrow-down"></i> More trusted customers</button>
+                <div class="power-section-footer-title">
+                    <h4>Fresh and improved features, elevated power <i class="fa-solid fa-arrow-right"></i></h4>
+
+
+
                 </div>
-             </section>
+
+            </div>
+        </section>
+
+        <!-- Premium-elements section -->
+        <section class="premium-elements-section">
+            <div class="template-section-heading ">
+                <div class="template-heading-title">
+                    <img class="img10" src="/image/crafto-landing-page-img-07.webp" alt="">
+                    <h1>300+</h1>
+                    <img class="img2" src="/image/crafto-landing-page-img-08.webp" alt="">
+                </div>
+                <div class="template-heading-description">
+
+                    <h1>Premium elements.</h1>
+                    <p><b style="color: black;">New and improved elements, elevated power.</b> <br>
+                        Crafto's extensive element library empowers you to design websites without the necessity of deep
+                        coding skills.</p>
+                </div>
+            </div>
+
+            <marquee class="marquee-right" behavior="" direction="">
+                <div class="marquee-elements">
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-computer-mouse"></i>Button</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-icons"></i>Social Icon</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-list"></i>Lists</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-bars-progress"></i>Progress bar</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-light fa-bars"></i>Highlights</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-people-group"></i>Teams</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-user"></i>Clients</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-arrow-right"></i>Calls to action</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-regular fa-image"></i>Image Gallery</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-location-dot"></i>Google map</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-regular fa-bell"></i>Subscription</button>
+                    </div>
+                </div>
+            </marquee>
+            <marquee class="marquee-right" behavior="" direction="right">
+                <div class="marquee-elements">
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-computer-mouse"></i>Button</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-icons"></i>Social Icon</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-list"></i>Lists</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-bars-progress"></i>Progress bar</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-light fa-bars"></i>Highlights</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-people-group"></i>Teams</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-user"></i>Clients</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-arrow-right"></i>Calls to action</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-regular fa-image"></i>Image Gallery</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-location-dot"></i>Google map</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-regular fa-bell"></i>Subscription</button>
+                    </div>
+                </div>
+            </marquee>
+            <marquee class="marquee-right" behavior="" direction="">
+                <div class="marquee-elements">
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-computer-mouse"></i>Button</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-icons"></i>Social Icon</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-list"></i>Lists</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-bars-progress"></i>Progress bar</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-light fa-bars"></i>Highlights</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-people-group"></i>Teams</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-user"></i>Clients</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-arrow-right"></i>Calls to action</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-regular fa-image"></i>Image Gallery</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-solid fa-location-dot"></i>Google map</button>
+                    </div>
+                    <div class="elements-card">
+                        <button><i class="fa-regular fa-bell"></i>Subscription</button>
+                    </div>
+                </div>
+            </marquee>
+        </section>
+
+        <!-- Specialized features section -->
+
+        <section>
+            <div class="sticky-box2">
+                <div class="sticky-box-content20">
+                    <button class="btn-showcase">Specialized Features</button>
+                    <h1>Differentiate your website with good visual effects and animations that impress visitors.</h1>
+                    <p><b style="color: black;">Incorporating animations is a highly effective technique for enhancing
+                            visitors engagement for your website.</b></p>
+                    <div>
+                        <button class="btn-portfolio">Standout effortlessly</button>
+                    </div>
+                </div>
+                <div class="sticky-image" data-tilt data-tilt-gLare>
+                    <img src="/image/crafto-landing-page-specialized-features.webp" alt="">
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Customer Review section -->
+        <section class="Customer-review-section">
+            <div class="customer-review-heading">
+                <button class="btn-showcase">Trusted and experienced power elite author</button>
+                <h1>51,500+ Trusted customers</h1>
+            </div>
+
+            <div class="features-card-container container">
+                <div class="review-card">
+                    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple
+                            themes through themeforest</b> and by far, the support that I received from the themezaa
+                        team has been the best I have ever gotten.</p>
+                    <h4>Dcappe</h4>
+                    <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple
+                            themes through themeforest</b> and by far, the support that I received from the themezaa
+                        team has been the best I have ever gotten.</p>
+                    <h4>Dcappe</h4>
+                    <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple
+                            themes through themeforest</b> and by far, the support that I received from the themezaa
+                        team has been the best I have ever gotten.</p>
+                    <h4>Dcappe</h4>
+                    <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple
+                            themes through themeforest</b> and by far, the support that I received from the themezaa
+                        team has been the best I have ever gotten.</p>
+                    <h4>Dcappe</h4>
+                    <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple
+                            themes through themeforest</b> and by far, the support that I received from the themezaa
+                        team has been the best I have ever gotten.</p>
+                    <h4>Dcappe</h4>
+                    <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>I have <b style="color: black; border-bottom: 1px solid black;"> purchased more than a couple
+                            themes through themeforest</b> and by far, the support that I received from the themezaa
+                        team has been the best I have ever gotten.</p>
+                    <h4>Dcappe</h4>
+                    <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="review-footer-btn">
+                <button class=" "><i class="fa-solid fa-arrow-down"></i> More trusted customers</button>
+            </div>
+        </section>
     </main>
     <footer>
-<div class="footer">
-<div>
-    <button class="btn2 btn-primary ">Pay once and get lifetime updates</button>
-    <h1>Craft a standout website <br>
-         with Crafto template.</h1>
-    <p>Elevate your powerful design with Crafto, the template of the future.</p>
-    <button class="btn2 btn-primary ">Purchase Crafto <i class="fa-solid fa-circle-arrow-right"></i></button>
-    <div class="footer-logo">
-        <img src="/image/themezaa.webp" alt="">
-    </div>
-</div>
-</div>
+        <div class="footer">
+            <div>
+                <button class="btn2 btn-primary ">Pay once and get lifetime updates</button>
+                <h1>Craft a standout website <br>
+                    with Crafto template.</h1>
+                <p>Elevate your powerful design with Crafto, the template of the future.</p>
+                <button class="btn2 btn-primary ">Purchase Crafto <i
+                        class="fa-solid fa-circle-arrow-right"></i></button>
+                <div class="footer-logo">
+                    <img src="/image/themezaa.webp" alt="">
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="/index.js"></script>
+    <script src="/vanilla-tilt.js"></script>
 </body>
 
 </html>
