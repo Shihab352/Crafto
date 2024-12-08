@@ -1,0 +1,795 @@
+/* Common Shared Style */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.golos-regular {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+}
+
+.golos-black {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 900;
+}
+
+.btn-primary {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: dimgray;
+    border: none;
+    border-radius: 100px;
+}
+
+main {
+    background-color: #f4f5fa;
+}
+
+/* Nav Related Style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/* Header Related Style */
+.header {
+    background-image: url(/image/crafto-landing-page-hero-section-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.Banner {
+    background-image: url(/image/crafto-landing-page-hero-section-img.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner-bg {
+    position: absolute;
+    font-size: 270px;
+    font-weight: 900;
+    left: 350px;
+    top: 50px;
+
+
+}
+
+.banner-img-1 {
+    position: absolute;
+    bottom: 80px;
+    right: 160px;
+
+}
+
+.banner-seal {
+    position: absolute;
+    left: 140px;
+    bottom: 70px;
+
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 30px;
+    right: 230px;
+    text-align: center;
+
+
+}
+
+.banner-title {
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+
+}
+
+.banner-description {
+    font-size: 20px;
+    color: gray;
+    line-height: 40px;
+}
+
+.banner-btn {
+    margin-top: 30px;
+}
+
+.btn1 {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 50px;
+    background-color: white;
+    color: black;
+    margin-right: 20px;
+}
+
+.btn2 {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px 30px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+}
+
+/* Features Section Style */
+.features-section {
+    padding: 100px 0px;
+    background-image: url(/image/crafto-landing-page-bg-04.webp), url(/image/crafto-landing-page-bg-05.webp);
+    background-position: left center, Right center;
+    background-repeat: no-repeat;
+    background-color: #f4f5fa;
+
+}
+
+.features-heading {
+    text-align: center;
+}
+
+.features-heading button {
+    font-weight: 500;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, #4c9100 40%, #8cb453 100%);
+}
+
+.features-heading h1 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 3.6rem;
+}
+
+.features-card-container {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.features-card-container .card {
+    padding: 30px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #f0f2f8;
+    text-align: center;
+}
+
+.features-card-description {
+    margin: 20px 0;
+}
+
+.features-card-description h3 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #15161d;
+}
+
+.feature-box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.feature-box-content h1 {
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+.feature-box-content p {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.feature-icon {
+    padding: 0 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Demo website section style */
+
+.demo-site-section {
+    padding: 50px 0;
+    margin: 50px 0;
+}
+
+.demo-section-heading {
+    text-align: center;
+    position: relative;
+}
+
+.demo-section-heading p {
+    position: absolute;
+    font-size: 270px;
+    font-weight: 900;
+    background: linear-gradient(to bottom, #d8dbe7da 50%, #f0f2f8 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: -300px;
+    right: 400px;
+}
+
+.demo-section-heading h1 {
+    position: absolute;
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #15161d;
+    bottom: -180px;
+    right: 350px;
+}
+
+.demo-section-heading .demo-img1 {
+    position: absolute;
+    left: 250px;
+    bottom: -100px;
+}
+
+.demo-section-heading .demo-img2 {
+    position: absolute;
+    right: 210px;
+    bottom: -50px;
+}
+
+.demo-card-container {
+    padding: 0 70px;
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.demo-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #888888;
+
+
+}
+
+.demo-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.demo-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.demo-content .left-content h4 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #15161d;
+}
+
+.demo-content .left-content p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #888888;
+}
+
+.demo-content .right-content button {
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.demo-content .right-content .demo-btn1 {
+    color: #e75050;
+    background-color: #ffeded;
+}
+
+.demo-content .right-content .demo-btn2 {
+    color: #1b855d;
+    background-color: #dbf2e7;
+}
+
+/* Premium Features Section Style */
+
+.premium-feature-section {
+    padding: 100px 0;
+    background-color: #fdfdfd;
+}
+
+.premium-feature-section .slider {
+    position: relative;
+}
+
+.premium-feature-section .slider marquee {
+    font-weight: 700;
+    font-size: 15.6rem;
+    color: #dbe1ee;
+    letter-spacing: -8px;
+}
+
+.premium-feature-section .slider img {
+    position: absolute;
+    left: 400px;
+    top: 50px;
+}
+
+.premium-section-content {
+    margin-top: 100px;
+}
+
+.premium-section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11px;
+}
+
+.premium-section-title h2 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #15161d;
+    letter-spacing: -2px;
+}
+
+.title-description h5 {
+    font-weight: 600;
+    color: #15161d;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.premium-box-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 50px;
+
+}
+
+.premium-box {
+    text-align: center;
+    padding: 5px;
+}
+
+.premium-box h4 {
+    font-weight: 700;
+    color: #15161d;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.premium-box p {
+    background-color: #f4f5fa;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 40px;
+    color: #7a7a83;
+}
+
+.premium-section-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.premium-section-footer button {
+    border: none;
+    margin-right: 20px;
+    background: #d1372a;
+    font-weight: 700;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 32px;
+}
+
+.premium-section-footer-title h4 {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* Sticky Box section style */
+.Sticky-box-section {
+    margin-top: 30px;
+}
+
+.sticky-image img {
+    width: 100%;
+}
+
+.sticky-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    background-image: url(/image/crafto-landing-page-bg-03.webp);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 50px 0;
+
+
+}
+
+.sticky-box-content {
+    margin-right: 100px;
+}
+
+.sticky-box-content2 {
+    margin-left: 100px;
+}
+
+.btn-showcase {
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    color: #15161d;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, #dddfeb 15%, transparent 100%);
+
+}
+
+.sticky-box-content h1 {
+    font-weight: 700;
+    font-size: 4.3rem;
+    color: #15161d;
+}
+
+.sticky-box-content2 h1 {
+    font-weight: 700;
+    font-size: 4.3rem;
+    color: #15161d;
+}
+
+.sticky-box-content p {
+    margin: 30px 0;
+    font-size: 18px;
+    color: #7a7a83;
+}
+
+.sticky-box-content2 p {
+    margin: 30px 0;
+    font-size: 18px;
+    color: #7a7a83;
+}
+
+.sticky-box-feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.sticky-box-feature .sticky-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sticky-feature i {
+    font-size: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.sticky-feature p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #15161d;
+}
+
+.btn-portfolio {
+    font-weight: 600;
+    font-size: 17px;
+    padding: 20px 46px;
+    background-color: #15161d;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+
+}
+
+.sticky-box2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    background-image: url(/image/crafto-landing-page-bg-04.webp);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 50px 0;
+
+}
+
+/* Perfect Template Section */
+.perfect-template-section {
+    background: white;
+    padding: 50px 0;
+}
+
+.template-section-heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 30px 50px;
+}
+
+.template-heading-description h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #15161d;
+}
+
+.template-heading-description p {
+    margin: 30px 0;
+    font-size: 18px;
+    color: #7a7a83;
+    padding-right: 50px;
+}
+
+.template-heading-title h1 {
+    font-weight: 900;
+    font-size: 12rem;
+    color: #15161d;
+    margin-right: 50px;
+}
+
+.template-heading-title {
+    position: relative;
+}
+
+.template-heading-title .img1 {
+    position: absolute;
+    top: -50px;
+    right: 30px;
+}
+
+.template-heading-title .img2 {
+    position: absolute;
+    bottom: -30px;
+    left: 90px;
+}
+
+.perfect-template-section marquee img {
+    width: 340px;
+    height: 100%;
+}
+
+.template-section-footer {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* Power feature section style */
+.power-fetaure-section {
+    background-color: #15161d;
+    padding: 50px 0;
+}
+
+.power-feature-title {
+    text-align: center;
+}
+
+.power-feature-title h1 {
+    font-weight: 900;
+    font-size: 20rem;
+    background: linear-gradient(to bottom, #2e3148 38%, #15161d 105%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.power-feature-title-container {
+    position: relative;
+}
+
+.power-feature-title-container .power-section-seal1 {
+    position: absolute;
+    right: 90px;
+    top: 100px;
+
+}
+
+.power-feature-title-container .power-section-seal2 {
+    position: absolute;
+    right: 90px;
+    top: 100px;
+}
+
+.power-feature-title h2 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #dbf2e7;
+    position: absolute;
+    bottom: 10px;
+    left: 350px;
+}
+.power-feature-card-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+}
+.card-body{
+    background-color: #1e1e28;
+    border-radius:10px;
+    padding:10px;
+}
+.card-body img{
+    width: 100%;
+}
+.card-description{
+    padding: 15px 20px;
+}
+.card-description h4{
+    color: white;
+    font-size: 17px;
+}
+.card-description p{
+    color: #7a7a83;
+}
+.power-section-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.power-section-footer button {
+    border: none;
+    margin-right: 20px;
+    background:#00AF6B;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 32px;
+}
+.power-section-footer-title h4 {
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #dbe1ee;
+}
+
+/* Premium Elements Section Style */
+.premium-elements-section{
+    margin: 100px 0;
+}
+.premium-elements-section .img10{
+    position: absolute;
+    top: -10px;
+    right: 200px;
+}
+.elements-card button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0px 10px 20px #888888;
+  border-radius: 10px;
+  border: none;
+  margin-right: 30px;
+
+}
+.elements-card i{
+    font-size: 30px;
+}
+.marquee-right .marquee-elements {
+    padding: 30px;
+    display: flex;
+    
+}
+.sticky-box-content20{
+    margin-left: 100px;
+}
+.sticky-box-content20 h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #15161d;
+    background-image: linear-gradient(to right top, #183fb9, #4f41df, #ae2eb9, #ef3f59, #e9522d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Customer Review Section style */
+.Customer-review-section{
+    margin-top: 50px;
+}
+.customer-review-heading h1{
+ 
+    font-weight: 700;
+    font-size: 3.6rem;
+}
+.customer-review-heading{
+    text-align: center;
+}
+.review-card{
+    padding: 40px 30px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color:white;
+    color: #7a7a83;
+    line-height: 30px;
+    
+}
+.review-card h4{
+    font-size: 17px;
+    font-weight: 600;
+    color: #15161d;
+}
+.review-footer-btn button{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 100px;
+}
+.review-footer-btn{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Footer style */
+footer{
+    margin-top: 100px;
+    background-image: url(/image/crafto-landing-page-bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+}
+.footer h1{
+    font-weight: 500;
+    font-size: 4rem;
+    color: white;
+    margin: 20px 0;
+}
+.footer p{
+    font-size: 20px;
+    color: #7a7a83;
+    margin-bottom: 40px;
+}
+.footer-logo{
+    margin-top: 50px;
+}
